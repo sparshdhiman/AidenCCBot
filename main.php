@@ -32,7 +32,7 @@ include __DIR__."/modules/checker/sm.php";
 if(strpos($message, "/start") === 0){
 if(!isBanned($userId) && !isMuted($userId)){
 
-  if($userId == $config['adminID']){
+  if($userId == $config['1763289506']){
     $messagesec = "<b>Type /admin to know admin commands</b>";
   }
 
@@ -48,11 +48,9 @@ $messagesec",
 	'reply_to_message_id'=> $message_id,
     'reply_markup'=>json_encode(['inline_keyboard' => [
         [
-          ['text' => "💠 Created By 💠", 'url' => "t.me/ninjanaveen"]
+          ['text' => "Bot By", 'url' => "t.me/austinsax72"]
         ],
-        [
-          ['text' => "💎 Source Code 💎", 'url' => "t.me/IndianBotsChat"]
-        ],
+	    
       ], 'resize_keyboard' => true])
         
     ]);
